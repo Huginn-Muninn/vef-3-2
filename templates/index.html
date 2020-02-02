@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block titill %}
+Index
+{% endblock %}
+
+{% block inninhald %}
+<a href="/">Heim</a>
+    <h1>Fréttasíða</h1>
+    {% for i in frettir %}
+        <h3><a href="/frett/{{ i[0] }}">{{ i[1] }}</a></h3> 
+    {% endfor %}
+{% endblock %}

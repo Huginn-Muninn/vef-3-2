@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block titill %}
+Frétt
+{% endblock %}
+
+{% block inninhald %}
+<a href="/">Heim</a>
+<h2 class="center">{{ frett[1] }}</h2>
+<h3 class="center">{{ frett[2] }}</h3>
+<img src="/static/{{frett[4]}}" width="200px" height="200px" class="center2">
+<h3 class="center">Höfundur: {{ frett[3] }}</h3>
+{% endblock %}
